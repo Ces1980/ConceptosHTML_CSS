@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sintaxis CSS</title>
+    <style>
+        /* 
+        Sintaxis de CSS
+
+        Selector {
+            propiedad: valor;
+        }
+        */
+        
+        body {
+            background: red;
+        }
+        /* Para dar estilo a un id se hace uso del númeral(#)
+        Se hace uso de id cuando el elemento que se le va a dar estilo 
+        sera único y no compartira caracteristicas con ningón otro */
+        
+        #caja {
+            height: 200px;
+            width: 200px;
+            background: yellow;
+        }
+        /* Para dar estilo a una clase se indica con un punto(.) */
+        
+        .grupo {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja"></div>
+
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+    <div class="grupo"></div>
+
+</body>
+
+</html>
