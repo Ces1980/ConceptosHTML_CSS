@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cajas Div</title>
+</head>
+
+<body>
+
+    <!-- La etiqueta center permite centrar , como por ejemplo poner un titulo en el documento
+    pero tambien puede centrar otros elementos  -->
+    <center>
+        <h3>Formulario</h3>
+        <form>
+            <!-- La etiqueta input permite ingresar información, 
+            el atributo type permite ingresar texto -->
+            <!-- Placeholder permite que el usuario saber que información va a escribir 
+            dentro del campo de texto -->
+            <!-- Value definir el valor que se enviará por este elemento. -->
+            <!-- readonly  sirve para que el usuario solo se le presente la información
+            del texto como lectura-->
+            <input type="text" placeholder="Entrada de texto" value="Otro césar" readonly>
+            <!-- Sirve para dar entrada del texto -->
+            <br>
+            <br>
+            <label for="texto">Entrada de texto</label>
+            <!-- El id declado dentro de la etiqueta input debe ser exclusiva, ningún
+            otro elemento debe de contar con el id que se a declarado dentro de ella -->
+
+            <!-- El atributo required no permite enviar un formulario si 
+            el campo donde fue declarado se encuentra vacio -->
+            <input id="texto" type="text" placeholder="Entrada de texto" value="" required>
+
+            <br>
+            <br>
+            <!-- PAra ingresar correos -->
+            <label for="correo">Entrada de correo</label>
+            <input id="correo" type="email" placeholder="Entrada de correo" value="" required>
+
+            <br>
+            <br>
+
+            <!-- Para ingresar contraseñas -->
+            <label for="pass">Entrada de contraseña</label>
+            <input id="pass" type="password" placeholder="Entrada de contraseña" value="">
+
+            <br>
+            <br>
+
+            <!-- Para ingresar números
+                con value da valor inicial
+            <input type="number" value="10" >-->
+
+            <!-- Con el atributo min se ciera el numero a 0 y se aumenta a maximo 3 -->
+            <input type="number" value="1" min="0" max="3">
+
+            <br>
+            <br>
+
+            <!-- El elemento select (<select>) de HTML representa un control que muestra un menú de opciones.
+                Las opciones contenidas en el menú son representadas por elementos <option>, 
+                los cuales pueden ser agrupados por elementos <optgroup>.
+                La opcion puede estar preseleccionada por el usuario.-->
+            <select>
+                <!-- En un formulario Web , el elemento HTML <option>  
+                se usa para representar un item dentro de un <select>, 
+                un  <optgroup> o un  elemento HTML5 <datalist> . -->
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+                <option>Opcion 4</option>
+                <option>Opcion 4</option>
+            </select>
+
+            <br>
+            <br>
+
+            <!-- El elemento HTML <input type="checkbox"> es un elemento de entrada que te permite 
+                insertar un vector o array de valores. El atributo value es usado para definr 
+                el valor enviado por el checkbox. El atributo checked se usa para indicar que el elemento está seleccionado.
+                El atributo indeterminate se usa para indicar que el checkbox esta en un estado indeterminado
+                (en la mayoria de las plataformas, esto dibuja una linea horizontal que atraviesa el checkbox). -->
+            <input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+            <input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+            <input type="checkbox" id="verde"><label for="verde">Verde</label>
+
+            <br>
+            <br>
+
+            <!-- Los elementos <input> de tipo radio se usan generalmente en grupos de radio:
+                colecciones de botones de radio que describen un conjunto de opciones relacionadas. 
+                Solo se puede seleccionar un botón de radio en un grupo dado al mismo tiempo.
+                Los botones de radio generalmente se representan como círculos pequeños,
+                que se rellenan o resaltan cuando se seleccionan. -->
+            <!-- Con el atributo name permite que solo un elemento del formulario pueda estar chequeado  -->
+            <input type="radio" id="blanco" name="radio" checked><label for="blanco">Blanco</label>
+            <input type="radio" id="negro" name="radio" checked><label for="negro">Negro</label>
+            <input type="radio" id="morado" name="radio" checked><label for="morado">Morado</label>
+
+            <br>
+            <br>
+            <!-- Para enviar formulario -->
+            <input type="submit" value="Enviar formulario">
+
+
+
+        </form>
+
+    </center>
+    <!-- La etiqueta form sirve para dar estructura a un formulario -->
+    <header>
+        <!-- PAra identificar una etiqueta de otra se utiliza el atributo id -->
+        <div id="logotipo">logotipo</div>
+    </header>
+    <nav>Barra de navegación</nav>
+
+    <section>Sección principal</section>
+
+    <aside>
+        <!-- Para clasificar nuestras div y así tengan los mismos estilos -->
+        <div class="noticias">Noticia 1</div>
+        <div class="noticias">Noticia 2</div>
+        <div class="noticias">Noticia 3</div>
+    </aside>
+
+
+</body>
+
+</html>
