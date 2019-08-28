@@ -1,0 +1,51 @@
+        Estructura de un documento HTML
+
+<!doctype html>
+<!--DOCTYPE se trata de una etiqueta que no necesita cierre y cuya función es facilitar información al servidor
+web que aloja la página. La información facilitada por esta etiqueta se refiere al tipo de documento, ademas es 
+necesaria para la comunicación entre el navegador y el servidor -->
+
+<html>
+<!-- HTML, se trata de una etiqueta par y es la etiqueta que se encierra todo el documento HTML -->
+
+<head>
+    <!--HEAD =  es una etiqueta par, define la cabecera del documento y contiene
+información del mismo (metadatos, scripts, estiulos, ubicación de estilos
+titulo de la pagina entre otros datos). Esta información mo es visible para el usuario  -->
+
+
+<body>
+<!--Body = Es una etiqueta par y la conocemos como el cuerpo del sitio web. Todo lo que se escriba dentro de esta estructura
+esta visible para el usuario  -->
+
+
+
+        Atributo en HTML
+
+        Qué es un atributo
+
+Cualquier etiqueta XHTML puede contener uno o más atributos, separados por espacios, que permiten especificar la etiqueta. 
+El código fuente tiene el siguiente aspecto:
+<etiqueta atributo="valor_de_atributo"> 
+<etiqueta atributo1="valor_de_atributo1" atributo2="valor_de_atributo2" > 
+En el XHTML los atributos tienen que estar siempre definidos (mediante el signo igual "=") y el valor del atributo 
+tiene que estar entre comillas dobles o simples.
+Existen una serie de atributos comunes a todas las etiquetas (salvo la etiqueta <html>) y algunas etiquetas tienen 
+unos atributos específicos. 
+
+Atributos comunes: class, id, style, title
+
+        Estructura de la cabecera de un docuemnto HTML
+
+
+ <head>
+    <meta>
+<!-- En la etiqueta meta puedes agregar las palabras clave que definen el contenido de la pagina. 
+    Aquí se pondrán las palabras más importantes que se centrarán en tu página web. 
+    Es recomendable que no abuses de estas etiquetas, usar palabras clave que no tienen ningún 
+    sentido para el contenido de la página web, no tendrá ningún beneficio ni para los motores de 
+    búsqueda ni los usuarios. Hay algunos entendidos en SEO que dicen que la etiqueta meta keywords 
+    ya no se tiene en cuenta por Google. Lo que si es cierto es que no tiene la misma importancia que 
+    lo tenia al principio del Internet. -->
+
+</head>       

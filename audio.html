@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="César Vargas Escorcia">
+    <meta name="description" content="Descripición del sitio">
+    <meta name="keywords" content="tutoriales, html, desarrollo web">
+    <title>Reproduccioen audio</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <header>Encabezado</header>
+
+    <nav>Barra de navegacción</nav>
+
+    <section>Sección principal</section>
+
+    <aside>Columna</aside>
+
+    <article>Articulo</article>
+    <h1>Titulo</h1>
+    <h2>Titulo</h2>
+    <h3>Titulo</h3>
+    <h4>Titulo</h4>
+    <h5>Título</h5>
+    <h6>Titulo</h6>
+
+    <p>Este es un <b>Parrafo</b>, <br> este texto esta dentro del parrafo pero declarado con un salto de línea </p>
+    <hr>
+
+    <a href="#">Este es un vinculo</a>
+    <br>
+    <figure>
+
+        <img src="./img/imagen.gif">
+
+    </figure>
+    <figcaption>Este es el pie de la imagen</figcaption>
+
+
+    <ol>
+        <h3><b>Lista organizada</b></h3>
+        <li>uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ol>
+
+    <ul>
+        <h3><b>Lista no organizada</b></h3>
+        <li>uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+    <hr>
+
+    <h3>Tabla haciendo sin hacer uso de thead y tbody</h3>
+
+
+    <table border="1">
+
+        <tr>
+            <th>Mes</th>
+            <th>Ahorro del mes</th>
+        </tr>
+        <tr>
+            <th>Enero</th>
+            <th>100</th>
+        </tr>
+        <tr>
+            <th>Febrero</th>
+            <th>200</th>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+
+    <h3>Tabla haciendo uso de thead y de tbody</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Ahorro del mes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Resultados del examen</h2>
+    <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+    <p>Andrés: <meter value="60" min="0" max="100" high="90"></meter></p>
+    <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p>
+    <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p>
+
+    <br>
+    <br>
+
+    <h2>Resultado de ventas</h2>
+    <p>Enero: <progress value="94" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Febrero: <progress value="60" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Marzo: <progress value="99" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Abril: <progress value="75" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Mayo: <progress value="85" min="0" max="100" high="90"></progress></progress>
+    </p>
+
+    <!-- <audio> sirve para incrustar sonido a nuestro video -->
+    <!-- Tres estados de preload: metadata, auto y none  -->
+    <!-- fORMATO DE audio Ogg VORBIS .ogg ligero de carga -->
+    <!-- mp3 .mp3 -->
+    <!-- WAV .wav excelente calidad de audio pero no se comprime lo que genera que gaste una gran cantidad de banda  -->
+    <!-- ACC .m4a .m4b .m4p, .mp4, ,acc mejor calidad de audio que mp3 -->
+    <!-- Se recomienda hacer uso de los tres formatos más conocidos para ser usados los audios
+         .mp3 .ogg .mp4 -->
+    <audio autoplay controls loop preload="auto">
+        <source src="./audio/sonido.mp3" type="audio/mp3" >
+        <source src="" type="" >
+        <source src="" type="" >
+    </audio>
+    <hr>
+    <footer>Este es el pie de pagina</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="César Vargas Escorcia">
+    <meta name="description" content="Descripición del sitio">
+    <meta name="keywords" content="tutoriales, html, desarrollo web">
+    <title>Estructura del cuerpo</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- Etiqueta para definir el encabezado de nuestra página web -->
+    <header>Encabezado</header>
+    <!-- Etiqueta para definir la barra de navegaciión -->
+    <nav>Barra de navegacción</nav>
+    <!-- Etiqueta para definir secciones de nuestro sitio -->
+    <section>Sección principal</section>
+    <!-- epresenta una sección de una página que tiene relación con el contenido
+        que está mostrando la pagina web y que podría ser considerado por separado
+        de ese contenido. Estas secciones son a menudo representados como barras laterales
+        y tambien llamadas Sidebar.F -->
+    <aside>Columna</aside>
+    <!--Etiqueta para definir dentro de ella articulos  -->
+    <article>Articulo</article>
+    <!--Para definir los encabezados desde h1 hasta h6 dentro de los elementos  -->
+    <h1>Titulo</h1>
+    <h2>Titulo</h2>
+    <h3>Titulo</h3>
+    <h4>Titulo</h4>
+    <h5>Título</h5>
+    <h6>Titulo</h6>
+    <!--Para definir parrafos dentro de los elementos   -->
+    <!-- La etique ta <b></b> resalta lo que se encuentre dentro de estas etiquetas -->
+    <!-- La etiqueta <br> genera un salto de línea -->
+    <p>Este es un <b>Parrafo</b>, <br> este texto esta dentro del parrafo pero declarado con un salto de línea </p>
+    <!-- <hr> genera una línea que permite separa el contenido -->
+    <hr>
+    <!-- La etiqueta <a> permite generar un vinculo haciendo uso del atributo href-->
+    <a href="#">Este es un vinculo</a>
+    <!-- Genera una linea imaginaria que separa el contenido de nuestro documento -->
+    <br>
+    <!-- La etiqueta <figure> permite organizar en mejor forma nuestras imagenes -->
+    <figure>
+        <!-- Etiqueta que permite incrustar una imagen a nuestro documento web -->
+        <img src="./img/imagen.gif">
+
+    </figure>
+    <!--<figcaption> sirve para poner un pie de página en una imagen  -->
+    <figcaption>Este es el pie de la imagen</figcaption>
+
+
+    <!-- <ol> se genera una lista organizados de forma numerica -->
+    <ol>
+        <h3><b>Lista organizada</b></h3>
+        <!-- <li> genera elementos con elementos organizados de forma numerica -->
+        <li>uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ol>
+    <!-- Genera una lista sin numeración -->
+    <ul>
+        <h3><b>Lista no organizada</b></h3>
+        <li>uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+    <hr>
+
+    <h3>Tabla haciendo sin hacer uso de thead y tbody</h3>
+
+    <!-- <table> Etiqueta que sirve para crear una tabla. 
+        Con el tributo border encierro las cajas de los elemnetos que encabezan las columnas -->
+    <table border="1">
+
+        <!-- con <tr> creamos las filas de la tabla -->
+        <tr>
+            <!-- Con <th> creamos las columnas -->
+            <th>Mes</th>
+            <th>Ahorro del mes</th>
+        </tr>
+        <tr>
+            <th>Enero</th>
+            <th>100</th>
+        </tr>
+        <tr>
+            <th>Febrero</th>
+            <th>200</th>
+        </tr>
+    </table>
+    <!-- <table> Etiqueta que sirve para crear una tabla. 
+        Con el tributo border encierro las cajas de los elemnetos que encabezan las columnas -->
+
+    <br>
+    <hr>
+
+    <h3>Tabla haciendo uso de thead y de tbody</h3>
+    <table border="1">
+        <!-- La etiqueta <thead> sirve identificar el encabezado de nuestra tabla -->
+        <thead>
+            <!-- con <tr> creamos las filas de la tabla -->
+            <tr>
+                <!-- Con <th> creamos las columnas -->
+                <th>Mes</th>
+                <th>Ahorro del mes</th>
+            </tr>
+            <!--Al identificar el encabezado de nuestra tabla con thead y el cuerpo con tbody nos 
+    ayuda a trabajar mejor el contendio de nuestra tabla  -->
+        </thead>
+        <!-- Con <tbody> sirve para identificar el contenido de nuestra tabla -->
+        <tbody>
+
+            <tr>
+                <!--A diferencia de la tabla donde no se usa thead y tbody 
+                en los elementos de que rodean la etiqueta tbody, dentro de las columnas 
+                 esos elementos se etiqueta con <td> para ayudar a diferenciar el resalte
+                entre los titulos de las columnas y los elementos que se encuentran dentro de ellas   -->
+                <td>Enero</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>$200</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2>Resultados del examen</h2>
+    <!-- Con la etiqueta <meter> se crea un indicador de valores-->
+    <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+    <p>Andrés: <meter value="60" min="0" max="100" high="90"></meter></p>
+    <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p>
+    <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p>
+
+    <br>
+    <br>
+
+    <h2>Resultado de ventas</h2>
+    <!-- Con la etiqueta <progress> se puede indicar valores de progress
+         Hay navegadores que no llen la etiqueta meter, se puede usar la etiqueta progress como
+        alternativa-->
+    <p>Enero: <progress value="94" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Febrero: <progress value="60" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Marzo: <progress value="99" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Abril: <progress value="75" min="0" max="100" high="90"></progress></progress>
+    </p>
+    <p>Mayo: <progress value="85" min="0" max="100" high="90"></progress></progress>
+    </p>
+
+    <hr>
+    <!-- Con la eqiqueta <footer> se crea nuestro pie de página -->
+    <footer>Este es el pie de pagina</footer>
+
+</body>
+
+</html>
