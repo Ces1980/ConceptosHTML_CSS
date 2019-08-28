@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Propiedad de Forma</title>
+
+    <style>
+        header {
+            width: 1000px;
+            /*Ancho  */
+            height: 200px;
+            /* Alto */
+            background: blue;
+            /*Color de fondo */
+            margin: 20px;
+            /* La propiedad CSS margin establece el margen para los cuatro lados.
+            Pra establecer margenes por separado se utilizan:
+            margin-top (arriba) 
+            margin-right (derecha) 
+            margin-bottom (abajo) 
+            margin-left. (izquierda)
+         */
+            border: 5px solid yellow;
+            /*El primer parametro sirve para identificar el grueso del borde
+            El segundo parametro sera el tipo de borde
+             El tercer parametro se declara el color del borde */
+            padding: 20px;
+        }
+        
+        #logo {
+            height: 60px;
+            width: 200px;
+            background: greenyellow;
+            border: 5px solid white;
+            /* Margen interno del elemento. Al igual que el margin, tambien se pueden
+            establecer limites de forma independiente por lado
+             */
+            /*Margen externo  */
+            margin: 5px;
+            /*Margen interno  */
+            padding: 20px;
+            /* La propiedad CSS border-radius permite a los desarrolladores Web 
+            definir qué tan redondeadas serán las esquinas. 
+            La redondez de cada esquina está definida usando uno o dos valores 
+            para el radio que define su forma dependiendo si es un círculo o una elipse.
+
+            El radio se aplica a todo el background, aun si el elemento no tiene bordes; 
+            la posición exacta del recorte es definida por la propiedad background-clip.
+
+            Esta propiedad es un atajo para establecer las cuatro propiedades border-top-left-radius, 
+            border-top-right-radius, border-bottom-right-radius y border-bottom-left-radius. */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">Logotipo</div>
+    </header>
+
+</body>
+
+</html>
