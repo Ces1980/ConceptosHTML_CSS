@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Propiedades de color</title>
+    <style>
+        /* Dar color a los elementos de nuestro html*/
+        
+        .grupo {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        
+        #c1 {
+            /* Declarar color haciendo uso de rgb */
+            background: rgb(255, 0, 255);
+        }
+        
+        #c2 {
+            /* Declarar un color por hexadecimal */
+            background: #0d382a;
+        }
+        /* Se nombra el color en ingles */
+        
+        #c3 {
+            background: rebeccapurple;
+        }
+        /* Se utiliza la clave rgba para dar trasparencia a nuestro color
+        0= color totalmente tasparente
+        1= color totalmente solido */
+        
+        #c4 {
+            background: rgba(255, 0, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="c1" class="grupo"></div>
+    <div id="c2" class="grupo"></div>
+    <div id="c3" class="grupo"></div>
+    <div id="c4" class="grupo"></div>
+</body>
+
+</html>
