@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Propiedades de ubicación</title>
+
+    <style>
+        /* Selector universal 
+
+        Con el selector universal se modifican los valores por defecto */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        header {
+            /* Dar ubicación a el header con position 
+            position: static-> no está posicionado en ninguna forma en específico. 
+            Se dice que un elemento static, está no posicionado y un elemento 
+            con valor establecido de position está posicionado.
+            position: se comporta de la misma manera que static a menos que le agregues otras propiedades */
+            position: relative;
+            /* Dar margen con auto se centra la caja */
+            margin: 20px auto;
+            width: 1000px;
+            height: 120px;
+            background: #444;
+        }
+        
+        #logo {
+            /* La posición absoluta va a permitir ubicar una caja interna dentro
+              de una caja principal*/
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 200px;
+            height: 60px;
+            background: #ccc;
+        }
+        
+        .redes {
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            background: #aaa;
+            border-radius: 100%;
+        }
+        
+        #icono1 {
+            top: 42px;
+            right: 120px;
+        }
+        
+        #icono2 {
+            top: 42px;
+            right: 71px;
+        }
+        
+        #icono3 {
+            top: 42px;
+            right: 19px;
+        }
+        
+        nav {
+            position: relative;
+            /* Dar margen con auto se centra la caja */
+            margin: auto;
+            width: 1000px;
+            height: 48px;
+        }
+        
+        .botones {
+            /* Se flotan los botones de izquierda a derecha */
+            float: left;
+            width: 196px;
+            height: 48px;
+            background: #333;
+            /* Se da margen entre botones en la barra de navegación */
+            margin: 0px 2px;
+        }
+        
+        #top {
+            position: relative;
+            /* Dar margen con auto se centra la caja */
+            margin: 20px auto;
+            width: 1000px;
+            height: 192px;
+        }
+        
+        #top ul {
+            width: 1010px;
+            height: 192px;
+        }
+        /* Modificar elementos html a través de ruta */
+        
+        #top ul li {
+            float: left;
+            width: 326px;
+            height: 192px;
+            background: black;
+            margin-right: 10px;
+        }
+        
+        section {
+            position: relative;
+            /* Dar margen con auto se centra la caja */
+            margin: auto;
+            width: 1000px;
+            height: 453px;
+            background: #aaa;
+        }
+        
+        aside#izq {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            background: #333;
+        }
+        
+        article {
+            position: absolute;
+            left: 200px;
+            top: 0;
+            width: 600px;
+            height: 453px;
+            background: rgb(136, 19, 19);
+        }
+        
+        aside#der {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 453px;
+            background: #333;
+        }
+        
+        footer {
+            position: relative;
+            /* Dar margen con auto se centra la caja */
+            margin: 20px auto;
+            width: 1000px;
+            height: 70px;
+            background: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inicia cabecera -->
+    <header>
+        <div id="logo">Hola</div>
+
+        <div id="icono1" class="redes"></div>
+        <div id="icono2" class="redes"></div>
+        <div id="icono3" class="redes"></div>
+    </header>
+    <!-- Cierra cabecera -->
+
+    <!-- Inicia barra de navegación -->
+    <nav>
+        <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+        </ul>
+    </nav>
+    <!-- Termina barra de navegación -->
+
+    <!-- Inicia parte superior -->
+    <div id="top">
+        <ul>
+            <li></li>
+
+            <li></li>
+
+            <li></li>
+        </ul>
+    </div>
+    <!-- Cierra parte superior -->
+
+    <!-- Inicia sección -->
+    <section>
+        <aside id="izq"></aside>
+
+        <article></article>
+
+        <aside id="der"></aside>
+    </section>
+    <!-- Termina sección -->
+
+    <!-- Inica pie de página -->
+    <footer></footer>
+    <!-- Termina pie de página -->
+
+</body>
+
+</html>
