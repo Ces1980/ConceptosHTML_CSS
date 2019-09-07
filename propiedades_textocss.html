@@ -164,7 +164,18 @@
             top: 0;
             width: 200px;
             height: 453px;
-            background: #333;
+        }
+        
+        aside#izq ul li {
+            background: #aaa;
+            /* MArgen interno */
+            padding: 10px;
+            margin: 15px 5px;
+            /* Items que aparecen por dentro  del elementos li a lado de los textos */
+            list-style: square;
+            list-style-position: inside;
+            /* Cambiar la imagen de los puntos generados */
+            list-style-image: url(./img/lista.png);
         }
         
         article {
@@ -248,19 +259,19 @@
     <div id="top">
         <ul>
             <li>
-                <img src="./img/imagen1.jpg" width="100">
+                <img src="./img/img01.jpg" width="100">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
 
             <li>
-                <img src="./img/imagen2.jpg" width="80">
+                <img src="./img/img02.jpg" width="80">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
 
             <li>
-                <img src="./img/imagen3.jpg" width="70">
+                <img src="./img/img03.jpg" width="70">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </li>
@@ -270,12 +281,19 @@
 
     <!-- Inicia sección -->
     <section>
-        <aside id="izq"></aside>
+        <aside id="izq">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+            </ul>
+        </aside>
 
         <article>
             <h1>Lorem Ipsum</h1>
-            <p><img src="./img/imagen.gif" width="100">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eum ipsum tempore error fuga odit minus distinctio harum eveniet fugit numquam ad, voluptatum unde, corporis blanditiis, non perspiciatis
-                omnis porro?
+            <p><img src="./img/foto.jpg" width="100">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eum ipsum tempore error fuga odit minus distinctio harum eveniet fugit numquam ad, voluptatum unde, corporis blanditiis, non perspiciatis omnis
+                porro?
             </p>
             <br>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum ipsa saepe odit molestias voluptates, tempore vel voluptas fugit itaque explicabo repellendus veniam, minima consequuntur, nostrum numquam sapiente velit magni.
