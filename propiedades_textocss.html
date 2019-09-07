@@ -33,7 +33,7 @@
         
         #logo {
             /* La posición absoluta va a permitir ubicar una caja interna dentro
-              de una caja principal*/
+            de una caja principal*/
             position: absolute;
             top: 30px;
             left: 30px;
@@ -174,7 +174,7 @@
             /* Items que aparecen por dentro  del elementos li a lado de los textos */
             list-style: square;
             list-style-position: inside;
-            /* Cambiar la imagen de los puntos generados */
+            /* Dandole imagen de los puntos generados */
             list-style-image: url(./img/lista.png);
         }
         
@@ -213,7 +213,69 @@
             top: 0;
             width: 200px;
             height: 453px;
-            background: #333;
+        }
+        
+        aside#der h2 {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: rgb(100, 0, 255, 1);
+            color: white;
+            /* Separar la caja del H2 de las cajas de los input  */
+            margin-bottom: 5px;
+        }
+        /* Dandole estilo a las cajas de los input */
+        
+        aside#der input {
+            padding: 10px;
+            margin: 5px 0px;
+            width: 176px;
+        }
+        
+        aside#der input[type="text"] {
+            /* Se inserta una imagen en la caja de input del tipo texto */
+            background: url(./img/usuario.png);
+            /* Se da la instrucción de no repetir la imagen
+            Sin esta instrucción se llenaria la casilla de una serie de 
+            repetición de imagenes */
+            background-repeat: no-repeat;
+            /* Se ajusta la imagen a la derecha de la caja del input */
+            background-position: right;
+            /* Con la siguiente instrucción se ajusta a la caja cntenedora */
+            background-size: contain;
+        }
+        
+        aside#der input[type="password"] {
+            /* Se inserta una imagen en la caja de input del tipo texto */
+            background: url(./img/password.png);
+            /* Se da la instrucción de no repetir la imagen
+            Sin esta instrucción se llenaria la casilla de una serie de 
+            repetición de imagenes */
+            background-repeat: no-repeat;
+            /* Se ajusta la imagen a la derecha de la caja del input */
+            background-position: right;
+            /* Con la siguiente instrucción se ajusta a la caja cntenedora */
+            background-size: contain;
+        }
+        
+        aside#der input[type="email"] {
+            /* Se inserta una imagen en la caja de input del tipo texto */
+            background: url(./img/email.png);
+            /* Se da la instrucción de no repetir la imagen
+            Sin esta instrucción se llenaria la casilla de una serie de 
+            repetición de imagenes */
+            background-repeat: no-repeat;
+            /* Se ajusta la imagen a la derecha de la caja del input */
+            background-position: right;
+            /* Con la siguiente instrucción se ajusta a la caja cntenedora */
+            background-size: contain;
+        }
+        
+        aside#der input[type="submit"] {
+            width: 200px;
+            background: rgb(188, 0, 100, .5);
+            border: 0;
         }
         
         footer {
@@ -303,7 +365,21 @@
             </p>
         </article>
 
-        <aside id="der"></aside>
+        <aside id="der">
+            <h2>Ingresos</h2>
+            <form>
+                <!--Con input se crea una caja especificando el tipo con el atributo type
+                con el atributo placeholder se le da una descrpción de la caja 
+                designada con el input -->
+                <input type="text" placeholder="Usuario">
+
+                <input type="password" placeholder="Contraseña">
+
+                <input type="email" placeholder="Correo electronico">
+
+                <input type="submit" value="Enviar">
+            </form>
+        </aside>
     </section>
     <!-- Termina sección -->
 
