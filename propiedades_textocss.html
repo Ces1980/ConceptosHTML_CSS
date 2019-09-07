@@ -118,8 +118,36 @@
             float: left;
             width: 326px;
             height: 192px;
-            background: rgb(172, 167, 167);
             margin-right: 10px;
+            /* Centrar los textos dentro de las cajas */
+            text-align: center;
+        }
+        /* Modificar las caracteristicas de las imagenes */
+        
+        #top ul li img {
+            /* Redondear las imagenes  */
+            border-radius: 100%;
+            /* Dar altura a la imagen */
+            height: 100px;
+        }
+        /* Cambiar la tiporafia de los titulos */
+        
+        #top ul li h1 {
+            font-family: 'Kaushan Script', cursive;
+        }
+        /* Cambiar caracteristicas de las imagenes incluidas en los div de la parte superior */
+        
+        #top ul li img {
+            /* Redondeando la imagen */
+            border-radius: 100%;
+            /* Dando tamaño */
+            height: 100px;
+        }
+        /* Dando caracteristicas a los parrafos  */
+        
+        #top ul li p {
+            font-size: 14px;
+            margin: 10px;
         }
         
         section {
@@ -128,7 +156,6 @@
             margin: auto;
             width: 1000px;
             height: 453px;
-            background: #aaa;
         }
         
         aside#izq {
@@ -146,7 +173,27 @@
             top: 0;
             width: 600px;
             height: 453px;
-            background: rgb(172, 167, 167);
+        }
+        
+        article h1 {
+            font-family: 'Kaushan Script', cursive;
+            font-size: 40px;
+            margin: 20px;
+        }
+        
+        article p img {
+            /* Pegar texto a la imagen */
+            float: left;
+            /* Separar el texto de la imagen */
+            margin-right: 20px;
+        }
+        
+        article p {
+            /* Dando margen entre parrafos tomando en cuenta que en el html ya cuenta con un salto de linea <br>*/
+            margin: 1px 10px;
+            font-size: 14px;
+            /* Se centra el texto */
+            text-align: justify;
         }
         
         aside#der {
@@ -164,7 +211,12 @@
             margin: 20px auto;
             width: 1000px;
             height: 70px;
-            background: #888;
+            background: rgb(100, 0, 255, 1);
+            text-align: center;
+            /* El texto que se encuentra en el pie de página se ajusta a la altura dada a la caja del footer */
+            line-height: 70px;
+            /* Dando color al texto */
+            color: white;
         }
     </style>
 </head>
@@ -224,6 +276,9 @@
             <h1>Lorem Ipsum</h1>
             <p><img src="./img/imagen.gif" width="100">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At eum ipsum tempore error fuga odit minus distinctio harum eveniet fugit numquam ad, voluptatum unde, corporis blanditiis, non perspiciatis
                 omnis porro?
+            </p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum ipsa saepe odit molestias voluptates, tempore vel voluptas fugit itaque explicabo repellendus veniam, minima consequuntur, nostrum numquam sapiente velit magni.
             </p>
             <br>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsum ipsa saepe odit molestias voluptates, tempore vel voluptas fugit itaque explicabo repellendus veniam, minima consequuntur, nostrum numquam sapiente velit magni.
