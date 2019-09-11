@@ -1,0 +1,340 @@
+  /* Selector universal 
+
+        Con el selector universal se modifican los valores por defecto */
+  
+  * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: sans-serif;
+  }
+  /* Darle stylo a la caja del chat */
+  
+  #chat {
+      /* Dando pocision fixed permitimos que la caja del chat sea movil */
+      position: fixed;
+      width: 250px;
+      height: 40px;
+      /* Dando ubicación: por defaul aparece de la parte superior izquierda
+            El atrinuto botton Especifica hasta qué punto el borde del margen 
+            inferior de una caja posicionada absolutamente se desplaza por encima del borde
+            inferior del 'bloque que contiene' la caja.
+            Con botton la caja se para a ubicar a la parte inferior izquierda*/
+      bottom: 0;
+      /* Con rigth: 20px; la caja ahora se ubica del lado derecho */
+      right: 20px;
+      background: magenta;
+      /* z-index permite poner nuestras cajas en un nivel superior
+            Declarando index-z subimos de forma superior nuestras cajas */
+      z-index: 1;
+      color: white;
+      text-align: center;
+      line-height: 40px;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 20px;
+      /* Con la siguiente instrucción se da borde a niestra caja de chat en las parte
+            superior derecha y la parte superior izquierda */
+      border-radius: 20px 20px 0 0;
+      /* Con la propiedad cursor se genera un cursor cuando se esta sobre la cja del chat */
+      cursor: pointer;
+  }
+  
+  header {
+      /* Dar ubicación a el header con position 
+            position: static-> no está posicionado en ninguna forma en específico. 
+            Se dice que un elemento static, está no posicionado y un elemento 
+            con valor establecido de position está posicionado.
+            position: se comporta de la misma manera que static a menos que le agregues otras propiedades */
+      position: relative;
+      /* Dar margen con auto se centra la caja */
+      margin: 20px auto;
+      width: 1000px;
+      height: 120px;
+  }
+  
+  #logo {
+      /* La posición absoluta va a permitir ubicar una caja interna dentro
+            de una caja principal*/
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 200px;
+      height: 60px;
+      /* /*  *margin: -30px; */
+      /* Tipo de letra importada desde google fonts */
+      font-family: 'Kaushan Script', cursive;
+      /* Tamaño de niuestra letra */
+      font-size: 50px;
+      /* Alineación del texto */
+      text-align: center;
+      /* Aliniacion vertical de acuerdo de la caja---> height: 60px; */
+      line-height: 60px;
+  }
+  
+  .redes {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      background: #aaa;
+      border-radius: 100%;
+      text-align: center;
+      line-height: 42px;
+      color: white;
+  }
+  
+  #icono1 {
+      top: 42px;
+      right: 120px;
+      background: blue;
+  }
+  
+  #icono2 {
+      top: 42px;
+      right: 71px;
+      background: green;
+  }
+  
+  #icono3 {
+      top: 42px;
+      right: 19px;
+      background: red;
+  }
+  
+  nav {
+      position: relative;
+      /* Dar margen con auto se centra la caja */
+      margin: auto;
+      width: 1000px;
+      height: 48px;
+  }
+  
+  .botones {
+      /* Se flotan los botones de izquierda a derecha */
+      float: left;
+      width: 196px;
+      height: 48px;
+      background: rgb(100, 0, 255, 1);
+      /* Se da margen entre botones en la barra de navegación */
+      margin: 0px 2px;
+      font-family: 'Kaushan Script', cursive;
+      color: white;
+      text-align: center;
+      line-height: 48px;
+  }
+  /* Darle estilo a nuestros botones con la psudo-clase hover: 
+        El efecto se evidencia cuando pasamos el cursor por encima del botón */
+  
+  a .botones:hover {
+      background: rgba(100, 0, 255, .4);
+  }
+  /* LA seudoclase active permite que se genere un evento cuando se da click al botón, 
+        cambiando el botón de color */
+  
+  a .botones:active {
+      background: rgba(255, 0, 43, 0.8);
+  }
+  
+  #top {
+      position: relative;
+      /* Dar margen con auto se centra la caja */
+      margin: 20px auto;
+      width: 1000px;
+      height: 192px;
+  }
+  
+  #top ul {
+      width: 1010px;
+      height: 192px;
+  }
+  /* Modificar elementos html a través de ruta */
+  
+  #top ul li {
+      float: left;
+      width: 326px;
+      height: 192px;
+      margin-right: 10px;
+      /* Centrar los textos dentro de las cajas */
+      text-align: center;
+  }
+  /* Modificar las caracteristicas de las imagenes */
+  
+  #top ul li img {
+      /* Redondear las imagenes  */
+      border-radius: 100%;
+      /* Dar altura a la imagen */
+      height: 100px;
+  }
+  /* Cambiar la tiporafia de los titulos */
+  
+  #top ul li h1 {
+      font-family: 'Kaushan Script', cursive;
+  }
+  /* Cambiar caracteristicas de las imagenes incluidas en los div de la parte superior */
+  
+  #top ul li img {
+      /* Redondeando la imagen */
+      border-radius: 100%;
+      /* Dando tamaño */
+      height: 100px;
+  }
+  /* Dando caracteristicas a los parrafos  */
+  
+  #top ul li p {
+      font-size: 14px;
+      margin: 10px;
+  }
+  
+  section {
+      position: relative;
+      /* Dar margen con auto se centra la caja */
+      margin: auto;
+      width: 1000px;
+      height: 453px;
+  }
+  
+  aside#izq {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 453px;
+  }
+  /* Quitar linea de decorado que se genera cuando hay enlaces */
+  
+  aside#izq ul li a {
+      text-decoration: none;
+  }
+  
+  aside#izq ul li {
+      background: #aaa;
+      /* MArgen interno */
+      padding: 10px;
+      margin: 15px 5px;
+      /* Items que aparecen por dentro  del elementos li a lado de los textos */
+      list-style: square;
+      list-style-position: inside;
+      /* Dandole imagen de los puntos generados */
+      list-style-image: url(./img/lista.png);
+  }
+  
+  aside#izq ul li a:hover {
+      background: rgba(235, 235, 27, 0.4);
+  }
+  
+  aside#izq ul li a:active {
+      background: rgba(83, 35, 22, 0.9);
+  }
+  
+  article {
+      position: absolute;
+      left: 200px;
+      top: 0;
+      width: 600px;
+      height: 453px;
+  }
+  
+  article h1 {
+      font-family: 'Kaushan Script', cursive;
+      font-size: 40px;
+      margin: 20px;
+  }
+  
+  article p img {
+      /* Pegar texto a la imagen */
+      float: left;
+      /* Separar el texto de la imagen */
+      margin-right: 20px;
+  }
+  
+  article p {
+      /* Dando margen entre parrafos tomando en cuenta que en el html ya cuenta con un salto de linea <br>*/
+      margin: 1px 10px;
+      font-size: 14px;
+      /* Se centra el texto */
+      text-align: justify;
+  }
+  
+  aside#der {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 200px;
+      height: 453px;
+  }
+  
+  aside#der h2 {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: rgb(100, 0, 255, 1);
+      color: white;
+      /* Separar la caja del H2 de las cajas de los input  */
+      margin-bottom: 5px;
+  }
+  /* Dandole estilo a las cajas de los input */
+  
+  aside#der input {
+      padding: 10px;
+      margin: 5px 0px;
+      width: 176px;
+  }
+  
+  aside#der input[type="text"] {
+      /* Se inserta una imagen en la caja de input del tipo texto */
+      background: url(./img/usuario.png);
+      /* Se da la instrucción de no repetir la imagen
+            Sin esta instrucción se llenaria la casilla de una serie de 
+            repetición de imagenes */
+      background-repeat: no-repeat;
+      /* Se ajusta la imagen a la derecha de la caja del input */
+      background-position: right;
+      /* Con la siguiente instrucción se ajusta a la caja cntenedora */
+      background-size: contain;
+  }
+  
+  aside#der input[type="password"] {
+      /* Se inserta una imagen en la caja de input del tipo texto */
+      background: url(./img/password.png);
+      /* Se da la instrucción de no repetir la imagen
+            Sin esta instrucción se llenaria la casilla de una serie de 
+            repetición de imagenes */
+      background-repeat: no-repeat;
+      /* Se ajusta la imagen a la derecha de la caja del input */
+      background-position: right;
+      /* Con la siguiente instrucción se ajusta a la caja cntenedora */
+      background-size: contain;
+  }
+  
+  aside#der input[type="email"] {
+      /* Se inserta una imagen en la caja de input del tipo texto */
+      background: url(./img/email.png);
+      /* Se da la instrucción de no repetir la imagen
+            Sin esta instrucción se llenaria la casilla de una serie de 
+            repetición de imagenes */
+      background-repeat: no-repeat;
+      /* Se ajusta la imagen a la derecha de la caja del input */
+      background-position: right;
+      /* Con la siguiente instrucción se ajusta a la caja cntenedora */
+      background-size: contain;
+  }
+  
+  aside#der input[type="submit"] {
+      width: 200px;
+      background: rgb(188, 0, 100, .5);
+      border: 0;
+  }
+  
+  footer {
+      position: relative;
+      /* Dar margen con auto se centra la caja */
+      margin: 20px auto;
+      width: 1000px;
+      height: 70px;
+      background: rgb(100, 0, 255, 1);
+      text-align: center;
+      /* El texto que se encuentra en el pie de página se ajusta a la altura dada a la caja del footer */
+      line-height: 70px;
+      /* Dando color al texto */
+      color: white;
+  }
